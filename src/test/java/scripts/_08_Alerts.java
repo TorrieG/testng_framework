@@ -150,7 +150,7 @@ public class _08_Alerts extends Base{
         Waiters.pause(2);
         amazonHomePage.applyButton.click();
 
-        Assert.assertTrue(amazonHomePage.deliveryMessage.getText().contains(zipCode));
+        Assert.assertFalse(amazonHomePage.deliveryMessage.getText().contains(zipCode));
         Waiters.pause(2);
     }
 }

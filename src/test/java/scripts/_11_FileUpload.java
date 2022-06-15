@@ -2,7 +2,6 @@ package scripts;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import utilities.Waiters;
 
 public class _11_FileUpload extends Base{
@@ -22,10 +21,10 @@ public class _11_FileUpload extends Base{
         //Waiter.pause(2);
         heroAppPage.clickOnLink("File Upload");
         //Waiter.pause(2);
-        heroAppPage.chooseFileInputBox.sendKeys("/Users/techglobal/IdeaProjects/testng_framework/myFileTech2.xls");
-       // Waiter.pause(2);
+        heroAppPage.chooseFileInputBox.sendKeys("C:\\Users\\mstor\\IdeaProjects\\testng_framework\\myFileTech2.xls");
+        //Waiter.pause(2);
         heroAppPage.uploadFileButton.click();
-       // Waiter.pause(2);
+        //Waiter.pause(2);
 
         //Locate 2 more elements
         Assert.assertEquals(heroAppPage.fileUploadedH3.getText(), "File Uploaded!");
